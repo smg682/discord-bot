@@ -15,8 +15,8 @@ with open('config.json', 'r') as file:
 
 intents = discord.Intents.default()
 intents.messages = True
-
-bot = commands.Bot(command_prefix='!', intents=intents)
+Client = discord.Client()
+client = commands.Bot(command_prefix = "!")
 
 # Создаем плейлист
 def create_playlist(directory):
@@ -158,4 +158,4 @@ async def play_audio(ctx, filename):
     await vc.disconnect()
 
 
-bot.run("MTA4MjIyMTg4MTYyNjczODY4OQ.GniNq4.ZFBuS-5wHxBpzuKIG61G9SZA7385KfNxAQp55E")
+client.run("MTA4MjIyMTg4MTYyNjczODY4OQ.GniNq4.ZFBuS-5wHxBpzuKIG61G9SZA7385KfNxAQp55E",bot=True)
