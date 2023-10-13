@@ -7,8 +7,8 @@ import os
 import random
 
 channel_id = 1082305144143740958
-MUSIC_DIR = '/home/kravets/discord-bot/pisnyary'
-FILATOV_DIR = '/home/kravets/discord-bot/filatov'
+MUSIC_DIR = 'pisnyary'
+FILATOV_DIR = 'filatov'
 
 with open('config.json', 'r') as file:
     config = json.load(file)
@@ -158,4 +158,4 @@ async def play_audio(ctx, filename):
     await vc.disconnect()
 
 
-client.run("MTA4MjIyMTg4MTYyNjczODY4OQ.GniNq4.ZFBuS-5wHxBpzuKIG61G9SZA7385KfNxAQp55E",bot=True)
+client.run("MTA4MjIyMTg4MTYyNjczODY4OQ.GYJw7u.MpOUW23WM-iBlCjobI3_QTV3xUENrJVu099VFI",bot=True)
